@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+         ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li{
+            padding: 0.2em;
+        }
+
+        form{
+            width: 300px;
+            font-family: "arial";
+            font-size: 14px;
+            padding: 1em;
+            border: 1px solid black;
+            border-radius: 1em;
+        }
+
+        input{
+            font: 1em sans-serif;
+            width: 140px;
+            border: 1px solid purple;
+
+        }
+
+        input:focus{
+            border: 1px solid red;
+        }
+
+        input[type="submit"]{
+            background: black;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h3>Please provide information about you</h3>
+    <form action="">
+        <ul>
+            <li>
+                <label for="fn"><span>First Name:</span>
+                    <input type="text" id="fn"></label>
+        </li>
+
+        <li>
+            <label for="sn"><span>Second Name:</span>
+                <input type="text" id="sn"></label>
+    </li>
+
+    <li>
+        <label for="email"><span>Email:</span>
+            <input type="email" id="email"></label>
+
+    </li>
+    <li>
+        <label for="country"><span>country:</span>
+            <select name="selectcountry" id="country">
+                <option value="">Ukraine</option>
+                <option value="">USA</option>
+                <option value="">Germany</option>
+                <option value="">Poland</option>
+                <option value="">Spain</option>
+                <option value="">Italy</option>
+            </select>
+
+    </li>
+
+
+    <li>
+        <label for="">
+            <span>Age:</span>
+            <input type= "number" name="Age" id="Age" min="1" max="120">
+        </label>
+    </li>
+
+
+        
+    <fieldset>
+        <li>
+            <p>Gender:</p>
+        
+        </li>
+
+    </fieldset>
+       
+
+    </ul>
+        
+
+        
+        
+    </form>
+
+</body>
+</html>

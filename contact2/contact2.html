@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact2</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li{
+            padding: 0.2em;
+        }
+
+        form{
+            width: 300px;
+            font-family: "arial";
+            font-size: 14px;
+            padding: 1em;
+            border: 1px solid black;
+            border-radius: 1em;
+        }
+
+        input{
+            font: 1em sans-serif;
+            width: 140px;
+            border: 1px solid purple;
+
+        }
+
+        input:focus{
+            border: 1px solid red;
+        }
+
+        input[type="submit"]{
+            background: black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h3>We need your opinion</h3>
+    <hr>
+    <form action="">
+
+        <ul>
+            <li>
+                <label for="umane">Name:</label>
+            <input type="text" id="umane" name = "username"> 
+            </li>
+
+            <li>
+                <label for="email">Email:</label>
+            <input type="text" id="email" name="userEmail">
+            </li>
+
+            <li>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="userPhone">
+
+            </li>
+
+            <li>
+                <label for="message">Message:</label>
+            <textarea name="userMessage" id="message"></textarea>
+            </li>
+
+        </ul>
+    </form>
+</body>
+</html>

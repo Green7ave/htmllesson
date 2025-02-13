@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li{
+            padding: 0.2em;
+        }
+
+        form{
+            width: 300px;
+            font-family: "arial";
+            font-size: 14px;
+            padding: 1em;
+            border: 1px solid black;
+            border-radius: 1em;
+        }
+
+        input{
+            font: 1em sans-serif;
+            width: 140px;
+            border: 1px solid purple;
+
+        }
+
+        input:focus{
+            border: 1px solid red;
+        }
+
+        input[type="submit"]{
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <h3>Замовлення суші</h3>
+    <form action="">
+        <ul>
+            <li><label for="name">
+                <span>Name:</span>
+                <input type="text" id="name" name="UserName">
+            </label></li>
+            <li><label for="adress">
+                <span>Adress:</span>
+                <input type="text" id="adress" name="AdressName">
+            </label></li>
+            <li><label for="phone">
+                <span>Phone:</span>
+                <input type="text" id="phone" name="UserPhone">
+
+            </label></li>
+            <li><label for="email">
+                <span>Email:</span>
+                <input type="email" id="email" name="UserEmail">
+            </label></li>
+
+
+            <li>
+                <label for="sushilist">
+                    <span>Sushi list:</span>
+                    <select name="SushiList" id="sushilist">
+                        <option value="1" selected disabled> - - - - -</option>
+                        <option value="">Tokyo</option>
+                        <option value="">Nakara</option>
+                        <option value="">Osaka</option>
+                        <option value="">Philadelphia</option>
+                        <option value="">Gold Dragon</option>
+                    </select>
+                </label>
+            </li>
+
+            <p>Additionally:</p>
+
+            <fieldset>
+                
+                <li>
+                    <label for="stickcount">
+                        <span>Stick count:</span>
+                        <input type="number" max="100" id="stickcount" name="StickCount">
+                    </label>
+                </li>
+
+                <li>
+                    <label for="sticktype">
+                        <span>Stick type:</span>
+                        <input type="radio" id="sticktype" name="StickType">
+                        <label for="clssic">Classic</label>
+
+                        <input type="radio" id="sticktype" name="StickType">
+                        <label for="trainy">Trainy</label>
+                    </label>
+                </li>
+
+                <li>
+                    <label for="napkins"></label>
+                    <span>Need napkins?:</span>
+                    <input type="radio" id="napkins" name="NapkinsChoice">
+                    <label for="yesnapkins">Yes</label>
+                    <input type="radio" name="NapkinsChoice" id="napkins">
+                    <label for="nonapkins">No</label>
+                </li>
+
+
+                <li><label for="comment">
+                    <span>Additionally comment:</span>
+                    <textarea name="UserComment" id="comment"></textarea>
+                </label></li>
+            </fieldset>
+
+
+
+        </ul>
+    </form>
+</body>
+</html>
