@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CircleAnimation</title>
+
+    <style>
+        body{
+            background-color: rgb(146, 220, 220);
+        }
+
+        .circle{
+            background-color: green;
+            height: 50px;
+            width: 50px;
+            border: 10px;
+            border-radius: 50%;
+            justify-content: center;
+            margin-left: 50%;
+        
+
+            animation: circleanim  4s infinite ease;
+
+        }
+
+        @keyframes circleanim {
+           
+        0% {
+            transform: translate(0, 0);
+         }
+        25% {
+            transform: translate(200px, 200px);
+         }
+        50% {
+            transform: translate(-200px, 350px);
+        }
+        75% {
+            transform: translate(200px, 550px);
+        }
+        100% {
+            transform: translate(-200px, 800px);
+        }
+
+ 
+
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>

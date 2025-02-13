@@ -63,15 +63,39 @@
         @keyframes complexMove{
             0%{
                 left: 0;
+                top: 0;
                 transform: rotate(0) scale(1);
             }
             50%{
                 left: 100px;
+                top: 200px;
                 transform: rotate(45deg) scale(1.5);
             }
             100%{
                 left: 200px;
+                top: 0;
                 transform: rotate(0) scale(1);
+            }
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 50px;
+            border-radius: 50%;
+            animation: pulse infinite alternate ease-in-out;
+        }
+
+        @keyframes pulse{
+            0%, 100%{
+                 transform: scale(1);
+                 opacity: 1;
+            }
+            
+            50%{
+                transform: scale(1.5);
+                opacity: 0.5;
             }
         }
 
@@ -83,6 +107,8 @@
     <div class="box1"></div>
 
     <div class="box2"></div>
+
+    <div class="circle"></div>
 
 
 </body>
