@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exampleanimation</title>
+
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: cyan;
+
+            position: relative;
+            animation: move 2s ease-in-out infinite alternate;
+
+        }
+
+        @keyframes move{
+            0%{
+                left: 0px;
+            }
+
+            100%{
+                left: 200px;
+            }
+        }
+
+
+        .box1{
+            width: 50px;
+            height: 50px;
+            background-color: cyan;
+
+            position: relative;
+            animation: colorChange 1s infinite alternate;
+            
+        }
+
+        @keyframes colorChange{
+            0%{
+                background-color: cyan;
+            }
+            50%{
+                background-color: yellow;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+
+
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: lime;
+
+            position: relative;
+            
+            animation: complexMove 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes complexMove{
+            0%{
+                left: 0;
+                transform: rotate(0) scale(1);
+            }
+            50%{
+                left: 100px;
+                transform: rotate(45deg) scale(1.5);
+            }
+            100%{
+                left: 200px;
+                transform: rotate(0) scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+
+
+</body>
+</html>
