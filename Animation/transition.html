@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+
+    <style>
+        a{
+            text-decoration: none;
+            font-size: 2em;
+            background-color: chocolate;
+            border-radius: 5px;
+            color: white;
+            padding: 15px 25px;    
+
+
+            transition-property: background-color , padding;
+            transition-duration: 1.4s; 
+
+            transition-timing-function: ease;
+
+            transition-delay: 0.2s, 0.5s;
+
+
+
+        }
+
+        a:hover{
+            background-color: rgb(9, 175, 230);
+            padding: 20px 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="">Click me!</a>
+</body>
+</html>
