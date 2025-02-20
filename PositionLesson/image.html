@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageProject</title>
+
+
+    <style>
+        .wrapper{
+            font-family: Arial;
+            font-size: 20px;
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .img{
+            position:absolute;
+            width: 170px;
+            height: 220px;
+            text-align: center;
+            padding: 15px;
+            background-color: rgb(162, 206, 223);
+            box-shadow: 0 0 12px 3px rgb(76, 72, 72);
+            transform: rotateY(15deg);
+            border: 20px;
+            border-color: antiquewhite;
+            border-radius: 4%;
+        }
+
+        .img1{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy61t6fpf_ImmQutn8LiyGoNov3hvyMf3l6A&s);
+            left: 48%;
+            top: 80px;
+            z-index: 2;
+
+        }
+
+
+        .img2{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO9hSozV8t4Z2RFsudv4_fkv_1vykhDcElW7JT_TeOdssBuLw8GoAdWmwrNM-BhhLr5X0&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 20%;
+            top: 110px;
+            z-index: 0;
+        }
+
+        .img3{
+            background-image: url(https://wallpapers.com/images/hd/beautiful-nature-pictures-k4x3oitoxbhpdhk6.jpg);
+            left: 10%;
+            top: 70px;
+            z-index: -1;
+        }
+
+        .img4{
+            background-image: url(https://i.pinimg.com/236x/9c/b0/70/9cb070d62dc738a0c3a1a408d68e4af5.jpg);
+            left: 36%;
+            top: 190px;
+            z-index: 1;
+        }
+
+
+        .img:hover {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="img img1">
+            <div class="innerimg1"></div>
+        </div>
+        <div class="img img2">
+            <div class="innerimg2"></div>
+        </div>
+        <div class="img img3">
+            <div class="innerimg3"></div>
+        </div>
+        <div class="img img4">
+            <div class="innerimg4"></div>
+        </div>
+    </div>
+</body>
+</html>

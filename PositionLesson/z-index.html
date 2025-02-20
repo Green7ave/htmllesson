@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Idex</title>
+
+    <style>
+
+        .wrapper{
+            font-family: Arial;
+            font-size: 20px;
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            position: relative;
+            perspective: 450px;
+        }
+
+
+        .pos{
+            position:absolute;
+            width: 170px;
+            height: 220px;
+            text-align: center;
+            padding: 15px;
+            border: 3px darkcyan;
+            background-color: rgb(162, 206, 223);
+            box-shadow: 0 0 12px 3px rgb(76, 72, 72);
+            transform: rotateY(15deg);
+
+        }
+
+        .pos1{
+            left: 47%;
+            top: 190px;
+            z-index: 2;
+        }
+
+        .pos2{
+            left: 28%;
+            top: 80px;
+            z-index: 0;
+        }
+
+        .pos3{
+            left: 20%;
+            top: 20px;
+            z-index: -1;
+        }
+
+        .pos4{
+            left: 36%;
+            top: 140px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="pos pos1">Index2</div>
+        <div class="pos pos2">Index: Auto</div>
+        <div class="pos pos3">Index -1</div>
+        <div class="pos pos4">Index: 1</div>
+    </div>
+</body>
+</html>
